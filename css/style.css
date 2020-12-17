@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+body {
+  margin: 0;
+}
+.container {
+  padding: 0 0.8rem;
+}
+.contact {
+  text-align: center;
+  padding-right: 40px;
+  border-bottom: 3px solid rgb(207, 179, 52);
+}
+.info li {
+  margin: 1rem 0;
+}
+.society {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.society img {
+  width: 3rem;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo img {
+  max-width: 30%;
+  margin-top: 1rem;
+}
+.btn-toggle {
+  display: block;
+  position: relative;
+  right: 4rem;
+}
+.btn-toggle span,
+.btn-toggle span::before,
+.btn-toggle span::after {
+  position: absolute;
+  width: 40px;
+  height: 5px;
+  background: rgb(207, 179, 52);
+}
+.btn-toggle span::before,
+.btn-toggle span::after {
+  content: "";
+  transition: 0.3s;
+}
+.btn-toggle span::before {
+  transform: translateY(-8px);
+}
+.btn-toggle span::after {
+  transform: translateY(8px);
+}
+.btn-toggle_active span {
+  height: 0;
+}
+
+.btn-toggle_active span::before {
+  transform: rotate(45deg);
+}
+.btn-toggle_active span::after {
+  transform: rotate(-45deg);
+}
+.menu {
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 310px;
+  right: 0;
+  background-color: white;
+  text-align: center;
+  transition: 0.4s;
+  transform-origin: left;
+  transform: scaleX(0);
+  text-transform: uppercase;
+}
+.menu__active {
+  transform: scaleX(1);
+  opacity: 1;
+}
+.menu li {
+  padding: 1rem 0;
+  border-bottom: 1px solid rgb(192, 192, 192);
+}
+.main__text h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+.main__text p {
+  color: rgb(207, 179, 52);
+  font-size: 0.9rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.main__photo {
+  max-width: 100%;
+}
+/* -----------------------------------------wrap-service---------------------------------- */
+.wrap__service {
+  background: #45484f;
+  text-align: center;
+  color: white;
+  margin-top: 1rem;
+}
+.service__text {
+  padding-top: 2rem;
+}
+.service__card {
+  max-width: 20%;
+  width: 20%;
+  height: 20%;
+}
+.service__card {
+  fill: white;
+}
+.text__box_item {
+  padding: 1rem;
+  font-size: 1rem;
+}
+.contact__box {
+  border-top: 2px solid rgb(207, 179, 52);
+  margin-top: 2rem;
+}
+.contact__box_text {
+  color: rgb(207, 179, 52);
+  padding: 0 1rem;
+  font-size: 1.5rem;
+}
+.contact__box_btn img {
+  width: 5rem;
+  margin-right: 1rem;
+}
+.contact__box_btn {
+  display: flex;
+  justify-content: start;
+  margin-top: 3rem;
+}
+.contact__box_img {
+  width: 4rem;
+}
+.contact__box_item {
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+  color: rgb(207, 179, 52);
+  font-size: 1.5rem;
+  padding-left: 1.2rem;
+  cursor: pointer;
+}
+.service__gallery {
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+}
+.service__gallery_img {
+  width: 90%;
+}
+.service__gallery_text {
+  font-size: 1.2rem;
+}
+/* ---------------------form------------------------------- */
+.wrap__form {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+.form {
+  margin-top: 2rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.form__body {
+  position: relative;
+}
+.form__body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9) url(../i/loading.gif) center / 50px
+    no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5 ease 0s;
+}
+.form__body._sending::after {
+  opacity: 1;
+  visibility: visible;
+}
+.form__img_item {
+  max-width: 100%;
+}
+.form__label {
+  display: block;
+  padding: 0.5rem;
+}
+.form__input {
+  border-radius: 10px;
+  height: 1.8rem;
+  width: 70%;
+}
+.form__input:focus {
+  box-shadow: 0 0 20px rgb(207, 179, 52);
+}
+.form * {
+  outline: none;
+}
+
+.form__input._error {
+  box-shadow: 0 0 20px rgb(248, 8, 8);
+}
+.form__btn {
+  margin-top: 30px;
+  background: rgb(207, 179, 52);
+  border-radius: 10px;
+  width: 70%;
+  padding: 0.7rem;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+/* ------------footer---------------- */
+.wrap__footer {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+/* ------------------------ */
