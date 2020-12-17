@@ -13,7 +13,10 @@ $(() => {
         scrollTop: top
       }, 1000 );
     })
-  }) 
+  })
+  const scroll = new SmoothScroll('.contact__box_item[href="#form"]', {
+    speed: 1500
+  }); 
 "use strict"
 
 document.addEventListener('DOMContentLoaded', function(){
