@@ -5,6 +5,15 @@ $(() => {
       $(".menu").toggleClass("menu__active");
     });
   });
+  $(()=> {
+    $('.contact__box_item').on("click", function(e){
+      e.preventDefault();
+      let top = $('#form').offset().top;
+      $('html', 'body').animate({
+        scrollTop: top
+      }, 1000 );
+    })
+  }) 
 "use strict"
 
 document.addEventListener('DOMContentLoaded', function(){
