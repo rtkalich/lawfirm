@@ -259,7 +259,51 @@ body {
   text-align: center;
   margin-bottom: 1rem;
 }
-
+/* -----------------------------------------about us---------------------------------------------- */
+.wrap__about {
+  border-bottom: 2px solid rgb(207, 179, 52);
+  width: 95%;
+  margin: auto;
+  font-size: 0.9rem;
+}
+.about__item_img {
+  max-width: 100%;
+}
+.strong {
+  font-weight: 700;
+  text-align: center;
+}
+.list__service li {
+  padding-bottom: 0.5rem;
+  list-style: circle;
+}
+.ul__header {
+  font-weight: 700;
+  font-size: 1rem;
+}
+.img_2 {
+  max-width: 70%;
+  margin: 10% 15%;
+}
+.red__text {
+  font-style: italic;
+  color: crimson;
+  font-weight: 500;
+}
+.bg__grey {
+  background: #45484f;
+  color: white;
+}
+.about__item {
+  padding: 1rem;
+}
+.aphtograph {
+  font-weight: 700;
+}
+.form__header {
+  text-align: center;
+  padding-top: 2rem;
+}
 /* ---------------------------------------------tablet------------ */
 
 @media (min-width: 425px) {
@@ -274,8 +318,30 @@ body {
   }
 }
 @media (min-width: 768px) {
+  .wrap__about {
+    width: 98%;
+  }
+  .about__item_img {
+    float: right;
+    max-width: 50%;
+  }
+  .about__item_text {
+    overflow: hidden;
+  }
+  .img_2 {
+    float: left;
+    max-width: 42%;
+    margin: 0 5%;
+  }
+  .strong {
+    margin-top: 2rem;
+  }
+  .about__item_header {
+    text-align: center;
+    padding: 1rem 2rem;
+  }
   .menu {
-    top: 360px;
+    top: 350px;
   }
   .info {
     font-size: 1.2rem;
@@ -332,6 +398,10 @@ body {
   }
 }
 @media (min-width: 1024px) {
+  .img_2 {
+    max-width: 25%;
+    margin-bottom: 2rem;
+  }
   .btn-toggle {
     display: none;
   }
@@ -413,6 +483,10 @@ body {
   .form__info {
     padding-left: 3rem;
   }
+  .form__header {
+    width: 80%;
+    margin: auto;
+  }
   .form__btn {
     width: 100%;
   }
@@ -421,6 +495,23 @@ body {
   }
 }
 @media (min-width: 1200px) {
+  .about__item_img {
+    max-width: 48%;
+    margin-bottom: 0;
+  }
+
+  .strong {
+    text-align: left;
+  }
+  .wrap__about {
+    margin-bottom: 1rem;
+  }
+  .img_2 {
+    max-width: 30%;
+  }
+  .about__item {
+    margin-bottom: 2rem;
+  }
   .main__text h1 {
     width: 50%;
     padding: 3rem 0;
@@ -446,7 +537,9 @@ body {
   .service__gallery_img {
     width: 70%;
   }
-
+  .service__gallery {
+    padding: 1rem 3rem;
+  }
   .contact__box_text {
     width: 50%;
     margin: auto;

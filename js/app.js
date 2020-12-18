@@ -84,17 +84,5 @@ document.addEventListener('DOMContentLoaded', function(){
   }
 })
 
-function scrollTo(element) {
-  window.scroll({
-    left: 0, 
-    top: element.offsetTop, 
-    behavior: 'smooth'
-  })
-}
 
-var button = document.querySelector('.contact__box_item');
-var footer = document.querySelector('#form');
 
-button.addEventListener('click', () => {
-  scrollTo(footer);
-})
