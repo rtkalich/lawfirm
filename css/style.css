@@ -559,3 +559,8 @@ body {
     text-transform: uppercase;
   }
 }
+@media (min-width: 1600px) {
+  .main__text h1 {
+    width: 40%;
+  }
+}
