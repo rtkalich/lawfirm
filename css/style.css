@@ -398,6 +398,10 @@ body {
   }
 }
 @media (min-width: 1024px) {
+  .contact__box_item:hover {
+    background: rgb(207, 179, 52);
+    color: black;
+  }
   .img_2 {
     max-width: 25%;
     margin-bottom: 2rem;
